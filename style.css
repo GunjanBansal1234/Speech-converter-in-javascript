@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 15px;
+    font-family:  'poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font: 16px/1.2 var(--rob);
+    background: linear-gradient(45deg, #010758, #490d61);
+    background-repeat: no-repeat;
+    height:750px;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"] {
+    flex: 1 0 auto;
+    padding: 0 1rem;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.col-5 {
+    flex-basis: 41.66%;
+    max-width: 41.66%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+}
+
+.col-11 {
+    flex-basis: 91.66%;
+    max-width: 91.66%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.justify-space-bet {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* custom */
+.hero h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+}
+
+p{color: #fff;font-size: 30px;margin-top: 8rem; margin-bottom: 2rem;}
+.hero p span{
+    color: #ff2963;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    background: #403d84;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row1{
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+button
+{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    width: 50%;
+    appearance: none;
+    background-image: url('images/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x:calc(100% - 20px);
+    background-position-y:20px;
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* responsive s*/
+@media screen and (max-width:1220px) {
+    html {
+        font-size: 13px;
+    }
+
+
+}
+
+
+@media screen and (max-width:980px) {
+    .col-t-none {
+        display: none;
+    }
+
+    .col-t-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .col-t-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .col-t-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-t-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .col-t-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .col-t-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-t-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .col-t-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .col-t-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-t-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .col-t-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .col-t-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .col-m-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-m-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .col-m-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-m-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    .col-p-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    select{
+        flex: 1;
+        color: #fff;
+        background: #403d84;
+        height: 50px;
+        outline: 0;
+        border: 0;
+        border-radius: 35px;
+        width: 100%;
+        appearance: none;
+        background-image: url('images/dropdown.png');
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position-x:calc(100% - 20px);
+        background-position-y:20px;
+
+    }
+    
+    button{width: 100%;margin-top: 2rem;}
+    
+    .hero p{font-size: 20px;}
+
+
+
+
+}
+
+
+@media screen and (max-width:360px) {
+    .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    select{
+        flex: 1;
+        color: #fff;
+        background: #403d84;
+        height: 50px;
+        outline: 0;
+        border: 0;
+        border-radius: 35px;
+        width: 100%;
+        appearance: none;
+        background-image: url('images/dropdown.png');
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position-x:calc(100% - 20px);
+        background-position-y:20px;
+    }
+    
+    button{width: 100%;margin-top: 1rem;}
+    .hero p{font-size: 20px;}
+    
+    
+    
+}
